@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: #cefcff;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  background: rgba(173, 194, 196, 0.67);
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: "Lucida Handwriting", Times, serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #34383d;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #f34eeb;
+  color: black;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #cefcff;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: rgba(173, 194, 196, 0.67);
+  width: 100%;
+  padding: 20px;
+}
+
+.profile {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row h2 {
+  font-family: "Georgia";
+}
+
+a:link.cur,
+a:visited.cur {
+  background-color: rgba(173, 194, 196, 0.67);
+  color: black;
+  border: 2px solid #cefcff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 20px
+}
+
+a:hover.cur,
+a:active.cur {
+  background-color: #cefcff;
+  color: rgba(20, 35, 36, 0.67);
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #34383d;
+  margin-top: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: inline-block;
+}
+
+.footer a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f34eeb;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+div.gallery-responsive-image {
+  border: 1px solid #ccc;
+}
+
+div.gallery-responsive-image:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-responsive-image img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc-responsive-image {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive-image {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive-image {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive-image {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

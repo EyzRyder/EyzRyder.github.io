@@ -1,0 +1,33 @@
+<!Doctype html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel_Bessi">
+    <link rel="icon" type="image/x-icon" href="on.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Controle de uma lâmpada</title>
+
+</head>
+
+<body class="wall">
+
+    <img src="off.png" alt="Lâmpada" id="lamp" onclick="changeImage()" width="304" height="236">
+
+    <div>
+        <form>
+            <p>Click the light bulb to turn on/off the light.</p> <br>
+            <input class="btn" type="button" value="ON" onclick="changeImage()">
+            <input class="btn" type="button" value="OFF" onclick="changeImage()">
+            <input class="btn" type="button" value="BLINK" onclick="blink()">
+        </form>
+    </div>
+    <script src="controle.js"></script>
+
+</body>
+
+</html>

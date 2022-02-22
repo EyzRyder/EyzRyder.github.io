@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #cefcff;
+  font-family: sans-serif;
+}
+fieldset.container {
+  width: 80%;
+  background-color: #f2f2f2;
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 0px 24px 7px rgb(40, 69, 232);
+  margin: 2rem auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: flex;
+  position: relative;
+  padding: 20px;
+  opacity: 0.9;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset.container legend {
+  text-align: center;
+  font: 700 2rem "Josefin Sans", sans-serif;
+}
+label {
+  font: 200 1.1rem sans-serif;
+  color: rgb(36, 49, 58);
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font: 600 1rem;
+  box-shadow: 2px 2px 5px 1px rgba(90, 176, 179, 0.5);
+}
+
+input:hover,
+input:focus {
+  background-color: rgb(227, 245, 252);
+  outline: 3px solid rgb(31, 129, 121);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: steelblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+input[type="reset"] {
+  background-color: rgba(115, 140, 148, 0.671);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  filter: brightness(90%);
+  box-shadow: 0px 0px 24px 7px steelblue;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 720px) {
+  form {
+    margin: 2rem 2rem;
+  }
+  fieldset {
+    margin: 2rem 2rem;
+  }
+  
+}

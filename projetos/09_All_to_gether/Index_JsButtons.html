@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButOns</title>
+</head>
+
+<body>
+    <center>
+        <button onclick="onClick01()">Multiplicação</button> <br>
+        <button onclick="onClick02()">Multiplicação de Media</button> <br>
+        <button onclick="onClick03()">Apresentação</button> <br>
+        <button onclick="onClick04()">Cessores</button> <br>
+        <button onclick="onClick05()">Idade em Dias</button> <br>
+        <button onclick="onClick06()">Operação relacional</button> <br>
+        <button onclick="onClick07()">Reajuste</button> <br>
+        <button onclick="onClick08()">Operação aritimetrica</button> <br>
+        <button onclick="onClick09()">Multiplo de 5</button> <br>
+        <button onclick="onClick10()">Tabuada de 5</button> <br>
+        <button onclick="onClick11()">Positivo</button> <br>
+        <button onclick="onClick12()">Valoes Igual</button> <br>
+        <button onclick="onClick13()">Maior que</button> <br>
+        <button onclick="onClick14()">par ou impa</button> <br>
+        <button onclick="onClick15()">Temperatura</button> <br>
+        <button onclick="onClick16()">Semana</button> <br>
+        <button onclick="onClick17()">triagulo</button> <br>
+        <button onclick="onClick18()">Nome lista</button> <br>
+        <div id="output18"></div> <br>
+        <button onclick="onClick19()">Vetor</button> <br>
+        <button onclick="onClick20()">for (para)</button> <br>
+        <button onclick="onClick21()">Calcular compras(For (para))</button> <br>
+        <button onclick="onClick22()">Soma até negativo(While (enquanto))</button> <br>
+        <button onclick="onClick24()">Horas Trabalhado</button> <br>
+        <button onclick="onClick25()">parcelar</button> <br>
+        <button onclick="onClick26()">Pescador</button> <br>
+        <button onclick="onClick27()">fibonacci(erro)</button> <br>
+        <button onclick="onClick28()">Reajuste</button> <br>
+        <button onclick="onClick29()">Reajuste2</button> <br>
+        <button onclick="onClick30()">matriz</button> <br>
+        <button onclick="onClick31()">matriz2</button> <br>
+        <button onclick="onClick32()"> Calculador</button> <br>
+        <!--<button onclick="onClick33()">Um calculador com butáo</button> <br>
+        <button onclick="calcular33('+')">+</button>
+        <button onclick="calcular33('-')">-</button>
+        <button onclick="calcular33('*')">x</button>
+        <button onclick="calcular33('/')">/</button>
+        <div id="output33"></div> <br>-->
+        <button onclick="onClick34()">Avaliação Simples</button> <br>
+        <button onclick="onClick35()">Aprovação</button> <br>
+        <button onclick="onClick36()">erro calculador</button> <br>
+        <button onclick="onClick37()"> calculador while loop</button>
+        <button onclick="limpar37()"> Limpar</button> <br>
+        <div id="output37"></div> <br>
+        <button onclick="onClick38()">calculador dowhile loop</button>
+        <button onclick="limpar38()"> Limpar</button> <br>
+        <div id="output38"></div> <br>
+        <button onclick="onClick39()">calculador for loop</button>
+        <button onclick="limpar39()"> Limpar</button> <br>
+        <div id="output39"></div> <br>
+        <button onclick="onClick40()">calculador while loop</button>
+        <button onclick="limpar40()"> Limpar</button> <br>
+        <div id="output40"></div> <br>
+        <!--<button onclick="onClick41()">MAIS UM CALCULADOR</button> <br>
+        <button onclick="iniciarCalcular('+')">+</button>
+        <button onclick="iniciarCalcular('-')">-</button>
+        <button onclick="iniciarCalcular('*')">x</button>
+        <button onclick="iniciarCalcular('/')">/</button>
+        <div id="output2"></div> <br>-->
+        <button onclick="onClick42()">arry</button>
+        <button onclick="limpar42()"> Limpar</button> <br>
+        <div id="output42"></div> <br>
+        <button onclick="mostrarTabuada()">Criar tabuada</button>
+        <button onclick="limparTabuada()"> Limpar tabuada</button>
+        <div id="content"></div> <br>
+        <!--<button onclick="onClick43()">Calculador</button> <br>
+        <button onclick="calcular('+')">+</button>
+        <button onclick="calcular('-')">-</button>
+        <button onclick="calcular('*')">x</button>
+        <button onclick="calcular('/')">/</button>
+        <div id="output"></div>-->
+
+    </center>
+    <script>
+        function onClick01() {
+            var a, b, r;
+            a = window.prompt('Escreva um número:');
+            b = window.prompt('Escreva um outro número:');
+            a = parseInt(a)
+            b = parseInt(b)
+            r = a * b;
+            window.alert("A multiplicação desse números é igual a " + r);
+        }
+
+        function onClick02() {
+            var p1;
+            var p2;
+            var p3;
+            var p4;
+            var md;
+            md = parseInt(md);
+            p1 = window.prompt('Digite a nota do primeiro bimestre:');
+            p2 = window.prompt('Digite a nota do segundo bimestre:');
+            p3 = window.prompt('Digite a nota do terceiro bimestre:');
+            p4 = window.prompt('Digite a nota do quarto bimestre:');
+            md = ((parseInt(p1) + parseInt(p2) + parseInt(p3) + parseInt(p4)) / 4);
+            window.alert("A média dos alunos é: " + md);
+        }
+
+        function onClick03() {
+            var nome, idade, salal;
+            nome = window.prompt('Digite seu nome:');
+            idade = window.prompt('Digite sua idade: ');
+            salal = window.prompt('Digite seu salário: ');
+            window.alert("Bem vindo " + nome + " seu salário continua sendo " + salal + " e nem sua idade mudou, você está com " + idade + " ainda.");
+        }
+
+        function onClick04() {
+            var numsucant, sucessor, antecessor;
+            numsucant = window.prompt('Digite aqui o valor do número:');
+            window.alert("o sucessor do número é " + (parseFloat(numsucant) + (1)) + " e o antecessor é " + (parseFloat(numsucant) - 1));
+        }
+
+        function onClick05() {
+            var idadeemdia;
+            idadeemdia = window.prompt('Oi, por favor digita sua idade aqui:');
+            idadeemdia = 365 * idadeemdia;
+            window.alert("Você já viveu " + idadeemdia + " dias na sua vida.");
+        }
+
+        function onClick06() {
+            var a1, a2, a3, a4, a5;
+            var resu1;
+            a1 = 1;
+            a2 = 2;
+            a3 = 3;
+            a4 = 4;
+            a5 = 2;
+            resu1 = parseFloat(a1) + parseFloat(a2) - (parseFloat(a3) * parseFloat(a4)) / parseFloat(a5) > 0;
+            alert("(A + B - C * D / F) > 0 è falso ou verdadeiro?");
+            alert("O resultado da expressão matemática é " + resu1);
+        }
+
+        function onClick07() {
+            var salario, reajuste, porcentagem, novoSalario;
+            salario = window.prompt('Digite o salário do fucionário: ');
+            porcentagem = window.prompt('Digite a porcentagem do reajuste: ');
+            reajuste = (salario * porcentagem) / 100;
+            novoSalario = parseInt(salario) + parseInt(reajuste);
+            window.alert("O novo salário reajustado é " + novoSalario);
+        }
+
+        function onClick08() {
+            var a, b, r, ra, rb, rc, rd, re, rf, rg, rh, ri, rj;
+            a = 2;
+            b = 3;
+            r = 4 / 2 + 0 - 3 % 1 + Math.pow(b, a) + 6 / a - (1 * Math.pow(2, 3));
+            ra = 4 / 2 + 1 - 3 % 1 + Math.pow(b, a) + 6 / a - 1 * Math.pow(2, 3);
+            rb = 5 / 2 + 3 - 3 / 1 + Math.pow(a, b) + 8 / a - 0 * Math.pow(2, 3);
+            rc = 6 / 2 + 6 - 3 % 1 + Math.pow(b, a) + 4 / a - 2 * Math.pow(2, 3);
+            rd = 3 / 2 + 1 - 2 / 1 + Math.pow(b, a) + 2 / a - 1 * Math.pow(2, 3);
+            re = 8 / 2 + 3 - 2 % 1 + Math.pow(b, a) + 1 / a - 0 * Math.pow(2, 3);
+            rf = 7 / 2 + 6 - 2 / 1 + Math.pow(a, b) + 3 / a - 2 * Math.pow(2, 3);
+            rg = 10 / 2 + 1 - 4 % 1 + Math.pow(b, a) + 5 / a - 1 * Math.pow(2, 3);
+            rh = 9 / 2 + 0 - 4 / 1 + Math.pow(a, b) + 7 / a - 0 * Math.pow(2, 3);
+            ri = 6 / 3 + 2 - 4 % 1 + Math.pow(b, a) + 4 / a - 2 * Math.pow(2, 3);
+            rj = 8 / 4 + 4 - 4 / 1 + Math.pow(a, b) + 2 / a - 1 * Math.pow(2, 3);
+            window.alert("O resultado do exemplo é = " + r);
+            window.alert("O resultado da letra a é = " + ra);
+            window.alert("O resultado da letra b é = " + rb);
+            window.alert("O resultado da letra c é = " + rc);
+            window.alert("O resultado da letra d é = " + rd);
+            window.alert("O resultado da letra e é = " + re);
+            window.alert("O resultado da letra f é = " + rf);
+            window.alert("O resultado da letra g é = " + rg);
+            window.alert("O resultado da letra a é = " + rh);
+            window.alert("O resultado da letra a é = " + ri);
+            window.alert("O resultado da letra a é = " + rj);
+        }
+
+        function onClick09() {
+            var x;
+            x = window.prompt('Digite o valor de x:');
+            x = parseInt(x);
+            if (x % 5 == 0) {
+                window.alert("O número " + x + " é mutiplo de 5");
+            } else {
+                window.alert("O número " + x + " não é multiplo de 5 ");
+            }
+        }
+
+        function onClick10() {
+            window.alert("1x5=" + (1 * 5))
+            window.alert("2x5=" + (2 * 5))
+            window.alert("3x5=" + (3 * 5))
+            window.alert("4x5=" + (4 * 5))
+            window.alert("5x5=" + (5 * 5))
+            window.alert("6x5=" + (6 * 5))
+            window.alert("7x5=" + (7 * 5))
+            window.alert("8x5=" + (8 * 5))
+            window.alert("9x5=" + (9 * 5))
+            window.alert("10x5=" + (10 * 5))
+        }
+
+        function onClick11() {
+            var x;
+            window.alert("Digite um numero ");
+            x = window.prompt('Enter a value for x');
+            if (x < 0) {
+                window.alert("O numero é negativo");
+            } else {
+                window.alert("O numero é positivo");
+            }
+        }
+
+        function onClick12() {
+            var x, y;
+            x = window.prompt('Digite o valor de x: ');
+            y = window.prompt('Digite o valor de y: ');
+            x = parseInt(x);
+            y = parseInt(y);
+            if (x == y) {
+                window.alert("Os valores são iguais");
+            } else {
+                window.alert("Os valores são diferente");
+            }
+        }
+
+        function onClick13() {
+            var x, y;
+            x = window.prompt('Digite o valor de x: ');
+            y = window.prompt('Digite o valor de y: ');
+            x = parseInt(x);
+            y = parseInt(y);
+            if (x > y) {
+                window.alert("O maior valor é " + x);
+            } else {
+                window.alert("O maior valor é " + y);
+            }
+        }
+
+        function onClick14() {
+            var x;
+            x = window.prompt('Digite o valor de x: ');
+            x = parseInt(x);
+            if (x % 2 == 0) {
+                window.alert("O numero é par.");
+            } else {
+                window.alert("O numero é impar.");
+            }
+        }
+
+        function onClick15() {
+            var temp;
+            temp = window.prompt('Digite a temperatura: ');
+            temp = parseInt(temp);
+            if (temp <= 18) {
+                window.alert("Clima Frio");
+            } else {
+                if (temp <= 23) {
+                    window.alert("Clima Agradavel");
+                } else {
+                    if (temp <= 35) {
+                        window.alert("Clima Quente");
+                    } else {
+                        window.alert("Clima muito quente");
+                    }
+                }
+            }
+        }
+
+        function onClick16() {
+            var dia;
+            dia = window.prompt('Qual numero do dia da semana');
+            switch (dia) {
+                case '1': window.alert("Domingo");
+                    break;
+                case '2': window.alert("Segunda");
+                    break;
+                case '3': window.alert("Terça");
+                    break;
+                case '4': window.alert("Quarta");
+                    break;
+                case '5': window.alert("Quinta");
+                    break;
+                case '6': window.alert("Sexta");
+                    break;
+                case '7': window.alert("Sabado");
+                    break;
+                default: window.alert("Tá maluco lek, só tem 7 dias na semana");
+                    break;
+            }
+        }
+
+        function onClick17() {
+            var l1, l2, l3;
+            l1 = window.prompt("Digite o valor do primeiro Lado");
+            l2 = window.prompt("DDigite o valor do segundo Lado");
+            l3 = window.prompt("Digite o valor do terceiro Lado");
+            l1 = parseInt(l1);
+            l2 = parseInt(l2);
+            l3 = parseInt(l3);
+            if (l1 == l2 && l1 == l3 && l2 == l3) {
+                window.alert("O triangulo é um equilátero");
+            } else {
+                if ((l1 == l2 && l1 !== l3 && l2 !== l3) || (l2 == l3 && l2 !== l1 && l3 !== l1) || (l1 == l3 && l1 !== l2 && l3 !== l2)) {
+                    window.prompt("O triangulo é um isosceles");
+                } else {
+                    window.prompt("O triangulo é um escaleno");
+                }
+            }
+        }
+
+        function onClick18() {
+            var nomes = [6];
+            var contador;
+            var output18 = document.querySelector('#output18');
+            var msg = '';
+            contador = 1;
+            while (contador <= 5) {
+                nomes[contador] = window.prompt("Digite o " + contador + " ºnome: ");
+                contador++;
+            }
+            contador = 1;
+            while (contador <= 5) {
+                msg += contador + " º.- " + nomes[contador] + "<br>";
+                contador++;
+            }
+            output18.innerHTML = msg
+        }
+
+        function onClick19() {
+            var valores = [11];
+            var soma, media;
+            var i;
+            i = parseInt(i);
+            soma = 0;
+            media = 0;
+            for (i = 0; i <= 9; i++) {
+                valores[i] = window.prompt('Digite os valores de vetor: ');
+                soma = parseInt(soma) + parseInt(valores[i]);
+            }
+            media = parseInt(soma) / 10;
+            window.alert("O valor da média é: " + media);
+        }
+
+        function onClick20() {
+            var i, numero, quantidade;
+            window.prompt("Digite um número:");
+            window.alert("Os números impares entre 1 e" + numero + " são...");
+            i = parseInt(i);
+            for (i = 1; i <= numero; i += 2) {
+                window.alert(i);
+            }
+        }
+
+        function onClick21() {
+            var qtdProduto, i;
+            var precoProduto, precoTotal;
+            precoTotal = 0;
+            qtdProduto = window.prompt('Digite a quantidade de produtos:');
+            for (i = 1; i <= qtdProduto; i++) {
+                precoProduto = window.prompt("Digite o preço de produto " + i + ":");
+                precoTotal = parseInt(precoTotal) + parseInt(precoProduto);
+            }
+            window.alert("O preço total é: " + precoTotal);
+        }
+
+        function onClick22() {
+            var numero, soma;
+            soma = 0;
+            numero = window.prompt('Digite um número: ');
+            while (numero >= 0) {
+                soma = parseInt(soma) + parseInt(numero);
+                numero = window.prompt('Digite um número: ');
+            }
+            window.alert("A soma dos números é: " + soma);
+        }
+
+        function onClick24() {
+            var contador;
+            contador = 1;
+            window.prompt("Digite o total de horas trabalhadas na semana:");
+            h = parseInt(h);
+            if (h >= 200) {
+                window.alert("Você trabalhou " + (h - 200) + " hora(s) a mais e terá ganho 100% sobre ela(s).");
+            } else {
+                window.alert("Você trabalhou dentro do contrato de trabalho.");
+            }
+        }
+
+        function onClick25() {
+            var valorCompra;
+            valoerCompra = window.prompt("Digite o valor da compra: ");
+            if (valorCompra >= 100) {
+                window.alert("O valor da compra pode ser parcelado em até 10 vezes");
+            } else {
+                window.alert("O valor da compra pode ser parcelado em até 5 vezes");
+            }
+        }
+
+        function onClick26() {
+            var peso;
+            peso = window.prompt("Digite o peso do peixe: ");
+            if (peso > 50) {
+                window.alert("O peso do peixe está acima do regulamento e deverá pagar multa de R$ " + (4 * (parsInt(peso) - 50) / 5 / 2));
+            } else {
+                window.alert("O peso do peixe está dentro do regulamento.");
+            }
+        }
+
+        function onClick27(x) {
+            var num;
+            x = parseInt;
+            if ((x = 0) || (x = 1)) {
+                return x
+            } else {
+                return onClick27(x - 1) + onClick27(x - 2)
+            }
+            num = window.prompt("Entre com um número: ");
+            window.alert("Fibonacci: " + num);
+        }
+
+
+        function onClick28() {
+            var salario, reajuste, NSalario;
+            salario = window.prompt("Digite o salario do fucionário: ");
+            if (salario < 5000) {
+                window.alert("O novo salário reajustado é" + (parsInt(salario) + (parsInt(salario) * 30 / 100)));
+            } else {
+                window.alert("Você não tera aumento");
+            }
+        }
+
+        function onClick29() {
+            var salario, reajuste, NSalario;
+            salario = window.prompt("Digite o salario do fucionário: ");
+            if (salario >= 5000) {
+                window.alert("O novo salário reajustado é" + (parsInt(salario) + (parsInt(salario) * 0.15)));
+            } else {
+                if (salario > 3000) {
+                    window.alert("O novo salário reajustado é" + (parsInt(salario) + (parsInt(salario) * 0.2)));
+                } else {
+                    window.alert("O novo salário reajustado é" + (parsInt(salario) + (parsInt(salario) * 0.5)));
+                }
+            }
+        }
+
+        function onClick30() {
+            var matriz = [3, 2];
+            var linha, coluna;
+            matriz[2, 2] = window.prompt("22");
+            matriz[1, 2] = window.prompt("22");
+            for (linha = 1; linha <= 3; i++) {
+                for (coluna = 1; coluna <= 2; i++) {
+                    window.alert(matriz[linha, coluna]);
+                }
+            }
+        }
+
+        function onClick31() {
+            var matriz = [3, 4];
+            var linha, coluna;
+            for (linha = 1; linha <= 3; i++) {
+                for (coluna = 1; coluna <= 4; i++) {
+                    matriz[linha, coluna] = window.prompt("Digite um valor para a posição[" + linha + "," + coluna + "]:");
+                }
+            }
+            for (linha = 1; linha <= 3; i++) {
+                for (coluna = 1; coluna <= 4; i++) {
+                    window.alert(matriz[linha, coluna])
+                }
+            }
+        }
+
+        function onClick32() {
+            var n1 = prompt('Digite um número');
+            //converter em numero inteiro
+            n1 = parseInt(n1);
+            //pedir para o usuario digitar outro numero
+            var n2 = prompt('Digite outro número');
+            //converter em numero inteiro 
+            n2 = parseInt(n2);
+            //monstrar a subtração concatenando com o texto "a subtração é: ..."
+            alert("a subtração é: " + (n1 - n2));
+            //monstrar a multiplicação concatenando com o texto "a multiplicação é: ..."
+            alert("a multiplicação é: " + (n1 * n2));
+            //monstrar a divisão concatenando com o texto "a divisão é: ..."
+            alert("a divisão é: " + (n1 / n2));
+            //monstrar a soma concatenando com o texto "a soma é: ..."
+            alert("a soma é: " + (n1 + n2));
+        }
+
+        function onClick33() {
+
+        }
+
+        function onClick34() {
+            //Exercício 01 && E (and), média > 5 aluno aprovado senao reprovado.
+            var n1 = prompt("Digite um numero");
+            n1 = parseFloat(n1);
+
+            var n2 = parseFloat(prompt("Digite outro numero"));
+            var media = (n1 + n2) / 2;
+
+            if (n1 = 0 || n2 == 0 || media === 5) {
+                alert("INCRIVEL ESSE MISERAVEL É UM GENIO");
+            } else {
+                alert("Desculpe, não foi desta vez");
+            }
+        }
+
+        function onClick35() {
+            //Exercício 01 && E (and), média > 5 aluno aprovado senao reprovado.
+            var n1 = prompt("Digite um numero");
+            n1 = parseFloat(n1);
+
+            var n2 = prompt("Digite outro numero");
+            n2 = parseFloat(n2);
+
+            var media = (n1 + n2) / 2;
+            if (media > 5 && n1 > 0 && n2 > 0) {
+                alert("Parabéns! Você foi aprovado");
+            } else {
+                alert("Desculpe, não foi desta vez");
+            }
+        }
+
+        function onClick36(numA, numB, op) {
+            if (op == "somar") { return numA + numB; }
+            else if (op == "subtrair") { return numA - numB; }
+            else if (op == "multiplicar") { return numA * numB; }
+            else if (op == "dividir") { return numA / numB; }
+            else { return "esse operador não existe doidão!!" }
+            document.write(onClick36(2, 2, "somar") + "<br>");
+            document.write(onClick36(4, 2, "subtrair") + "<br>");
+            document.write(onClick36(4, 2, "multiplicar") + "<br>");
+            document.write(onClick36(4, 2, "dividir") + "<br>");
+        }
+
+        function onClick37() {
+            var numero = prompt("Digite um número");
+            numero = parseFloat(numero);
+            var output37 = document.querySelector('#output37');
+            var msg = ''
+            //usando loop while
+            var indice = 1;
+            while (indice <= 10) {
+                msg += numero + "x" + indice + "=" + (numero * indice) + "<br>";
+                indice++;
+            }
+            output37.innerHTML = msg
+            window.alert('saiu do loop');
+        }
+        function limpar37() {
+            output37 = document.querySelector('#output37');
+            output37.innerHTML = "";
+        }
+
+        function onClick38() {
+            var numero = prompt("Digite um número");
+            numero = parseFloat(numero);
+            var output38 = document.querySelector('#output38');
+            var msg = ''
+            //usando loop do while
+            var indice = 101;
+            // repita até que indice seja <=1000
+            do {
+                msg += numero + "x" + indice + "=" + (numero * indice) + "<br>";
+                indice++;
+            } while (indice <= 100);
+            output38.innerHTML = msg
+            window.alert('saiu do loop');
+        }
+        function limpar38() {
+            output38 = document.querySelector('#output38');
+            output38.innerHTML = "";
+        }
+
+        function onClick39() {
+            var numero = prompt("Digite um número");
+            numero = parseFloat(numero);
+            var output39 = document.querySelector('#output39');
+            var msg = ''
+            //usando loop for
+            var i = 1;
+            i = parseInt(i);
+            for (var i = 1; i <= 100; i++) {
+                // indice = indice +1; = indice++; = i++
+                msg += numero + "x" + i + "=" + (numero * i) + "<br>";
+            }
+            output39.innerHTML = msg
+            window.alert('saiu do loop');
+        }
+        function limpar39() {
+            output39 = document.querySelector('#output39');
+            output39.innerHTML = "";
+        }
+
+        function onClick40() {
+            var numero = prompt('digite um número');
+            var h;
+            numero = parseFloat(numero);
+            var output40 = document.querySelector('#output40');
+            var msg = ''
+            var indice = 0;
+            while (indice <= 100) {
+                msg += numero + 'x' + indice + '=' + (numero * indice) + '<br>' + h;
+                if (indice % 5 === 0 && indice > 0) {
+                    h = "<hr>";
+                }
+                indice++;
+            }
+            output40.innerHTML = msg
+        }
+        
+        function limpar40() {
+            output40 = document.querySelector('#output40');
+            output40.innerHTML = "";
+        }
+
+        function onClick41() {
+
+        }
+        function onClick42() {
+            var produtos = new Array('caneta', 'lapis', 'tesoura', 'borracha', 'caderno', 'livro');
+            produtos.push('compasso', 'cartola');
+            var output42 = document.querySelector('#output42');
+
+            var msg = '';
+            for (var i = 0; i < produtos.length; i++) {
+                msg += 'produto ' + (i + 1) + ':' + produtos[i] + '<br>';
+            }
+            output42.innerHTML = msg
+        }
+        function limpar42() {
+            output42 = document.querySelector('#output42');
+            output42.innerHTML = "";
+        }
+        function mostrarTabuada() {
+            var n = prompt('Numero: ');
+            n = parseFloat(n);
+
+            var mensagem = "";
+            output = document.querySelector('#content');
+
+            var i = 1;
+
+            while (i <= 500) {
+                mensagem += n + 'x' + i + '=' + (n * i) + '<br>';
+                i++;
+            }
+
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada() {
+            output = document.querySelector('#content');
+            output.innerHTML = "";
+        }
+        function onClick43() {
+
+        }
+    </script>
+</body>
+
+</html>

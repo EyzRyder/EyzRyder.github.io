@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="shortcut icon" href="dist/img/user.png" type="image/x-icon">
+</head>
+
+<body>
+<fieldset class="container">
+    <img src="dist/img/user.png" height="100" width="100"> <br> <br>
+    <legend>Cadastrar Usuário</legend>
+    <form name="formuser" action="" method="POST">
+        <div class="row">
+            <div class="col-25">
+                <label for="name">Nome Completo</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="name" name="nome" placeholder="Seu nome..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Seu E-mail..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="password">Senha</label>
+            </div>
+            <div class="col-75">
+                <input type="password" name="password" placeholder="Sua senha..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="data">Data de Nacimento</label>
+            </div>
+            <div class="col-75">
+                <input type="date" name="data" id="data" class="campo" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Programa">Preferencia de programação</label>
+            </div>
+            <div class="col-75">
+                <select id="Programa" name="Programa required">
+                    <option value="frontend">Front-end</option>
+                    <option value="vackend">Back-end</option>
+                    <option value="dois">Front e Back-end </option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Quais linguas conheço</label>
+            </div>
+            <div class="col-75 box">
+                <input type="checkbox" id="LIN1" name="LIN1" value="HTML">
+                <label for="LIN1"> HTML</label>
+                <input type="checkbox" id="LIN2" name="LIN2" value="CSS">
+                <label for="LIN2"> CSS</label>
+                <input type="checkbox" id="LIN3" name="LIN3" value="JavaScript">
+                <label for="LIN3"> JavaScript</label>
+            </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject">Nivel</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="radio" id="html" name="fav_language" value="HTML">
+                            <label for="html">Iniciante</label>
+                            <input type="radio" id="css" name="fav_language" value="CSS">
+                            <label for="css">Intermediário</label>
+                            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                            <label for="javascript">Avançado</label>
+                        </div>
+                    </div>
+            <div class="row">
+                <input type="submit" value="Submit" onclick="return validar()">
+                <input type="reset" value="Resetar formulário" id="reset">
+            </div>
+        </div>
+        </div>
+    </form>
+</fieldset>
+<script src="dist/js/script.js"></script>
+</body>
