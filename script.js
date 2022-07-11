@@ -2,38 +2,68 @@ let project = [
     {
         ahref: 'https://formulariodev-coral.vercel.app/',
         img: 'dist/img/Formulario_thumbnail.png',
-        alt: 'project',
+        alt: 'Formulario',
         description: 'Um Formulário simples'
     },
     {
         ahref: 'https://jslamp.vercel.app/',
         img: 'dist/img/lamp_thumbnail.png',
-        alt: 'project',
+        alt: 'Javascript Lamp',
         description: 'Lampada em js'
     },
     {
         ahref: 'https://js-buttons.vercel.app/',
         img: 'dist/img/buttons_thumbnail.png',
-        alt: 'project',
+        alt: 'Buttons pag',
         description: ' Basic JavaScript Buttons'
     },
     {
         ahref: 'https://css-menu.vercel.app/',
         img: 'dist/img/css_navbar.png',
-        alt: 'project',
+        alt: 'Css navbar page',
         description: 'Menu basico',
     },
     {
         ahref: 'https://quiz-de-ds.vercel.app/home',
         img: 'dist/img/quizdeds_thumbnail.png',
-        alt: 'project',
+        alt: 'Quiz de DS pag',
         description: 'Quiz de Ds',
     },
     {
         ahref: 'https://blog-gabrielbessi.vercel.app/',
         img: 'dist/img/blog_thumbnail.png',
-        alt: 'project',
+        alt: 'Blog page',
         description: 'Blog',
+    },
+    {
+        ahref: 'https://clima-js.vercel.app/',
+        img: 'dist/img/clima_thumbnail.png',
+        alt: 'Clima page',
+        description: 'Clima',
+    },
+    {
+        ahref: 'https://quiz-js-silk.vercel.app',
+        img: 'dist/img/quizJs_thumbnail.png',
+        alt: 'Quiz JavaScript',
+    description: 'Quiz JS',
+    },
+    {
+        ahref: 'https://relogio-js-alpha.vercel.app',
+        img: 'dist/img/relogio_thumbnail.png',
+        alt: 'Relógio page',
+        description: 'Relógio Analógico e Digital',
+    },
+    {
+        ahref: 'https://tic-tac-toe-game-js.vercel.app',
+        img: 'dist/img/tictactoe_thumbnail.png',
+        alt: 'tictactoe page',
+        description: 'tic-tac-toe',
+    },
+    {
+        ahref: 'https://canva-js-two.vercel.app',
+        img: 'dist/img/canva_thumbnail.png',
+        alt: 'canva page',
+        description: 'Canva pra desenhar',
     },
 ];
 let pp = 0;
